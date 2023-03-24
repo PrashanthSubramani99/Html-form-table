@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="page-content">
+            <div class="col-md-12">
+                <h1>HTML FORM GUVI TASK</h1>
+                <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <form action="" id="form">
+                            <div class="row form-group mt-4">
+                                <div class="col-md-6">
+                                    <label for="">First Name</label>
+                                    <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Enter the First Name">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="">Last Name</label>
+                                    <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Enter the Last Name">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="">Gender</label>
+                                    <select name="gender" id="gender" class="form-control">
+                                        <option value="" selected disabled>Select Gneder</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="indian_food" value="Indian Food" name = "food">
+                                        <label class="form-check-label" for="indian_food">Indian Food</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="western_food" value="Western Food" name = "food">
+                                        <label class="form-check-label" for="western_food">Western Food</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="mexican_food" value="Mexican Food" name = "food">
+                                        <label class="form-check-label" for="mexican_food">Mexican Food</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="italian_food" value="Italian Food" name = "food">
+                                        <label class="form-check-label" for="italian_food">Italian Food</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="japanese_food" value="Japanese Food" name = "food">
+                                        <label class="form-check-label" for="japanese_food">Japanese Food</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <label for="">Address</label>
+                                    <textarea name="address" class="form-control" id="address" cols="30" rows="5" placeholder = "Enter Address"></textarea>
+                                </div>
+                                <div class="col-md-3 mt-3">
+                                    <label for="">Pincode</label>
+                                    <input type="text" id="pincode" class="form-control" name="pincode" placeholder="Enter Pincode">
+                                </div>
+                                <div class="col-md-5 mt-3">
+                                    <label for="">State</label>
+                                    <input type="text" id="state" class="form-control" name="state" placeholder="Enter State">
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <label for="">Country</label>
+                                    <input type="text" id="country" class="form-control" name="country" placeholder="Enter country">
+                                </div>
+
+                                <div class="col-md-12 mt-3">
+                                    <input type="submit" class="btn btn-success" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Foods</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Pincode</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Country</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
